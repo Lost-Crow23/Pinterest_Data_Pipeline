@@ -1,9 +1,9 @@
-import requests
+import requests 
 import yaml 
 from time import sleep
 import random
 from multiprocessing import Process
-import boto3
+import boto3 
 import json
 from sqlalchemy import create_engine
 from sqlalchemy import text
@@ -63,7 +63,7 @@ def run_infinite_post_data_loop():
             
             for row in user_selected_row:
                 user_result = dict(row._mapping)
-            
+ 
             print(pin_result)
             print(geo_result)
             print(user_result)

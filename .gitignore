@@ -164,3 +164,8 @@ cython_debug/
 # Ignore all yaml files
 db_creds.yaml
 *.yaml
+
+# Ignore all pem files
+*.pem
+# ignore all jupyter notebook files
+*.ipynb
