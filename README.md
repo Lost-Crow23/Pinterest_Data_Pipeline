@@ -45,15 +45,21 @@ You may use HomeBrew (macos) to install an distribution for central software cal
 
 Many list of packages are required to fulfil this project which can be found in the prerequisites.txt file.
 
-But main packages include: - IDE = Vscode - Python version 3.11.9 (Installed within the environment(conda)) - Linux (Macos uses Linux(bash or zrc) integrated on terminal) - AWS IAM console login with necessary credentials - Kafka-python
+But main packages include: 
 
-`pip install kafka-python` - Pymysql - PyYaml
-
+- IDE = Vscode 
+- Python version 3.11.9 (Installed within the environment(conda)) 
+- Linux (Macos uses Linux(bash or zrc) integrated on terminal) 
+- AWS IAM console login with necessary credentials 
+- Kafka-python
+`pip install kafka-python` 
+- Pymysql 
+- PyYaml
 `pip install PyYaml`
 
 ## Apache Kafka
 
-    - An event streaming platform. Full documentation can be found here: # Link
+- An event streaming platform. Full documentation can be found here: # Link
 
 Event streaming is essentially the practice of capturing data in real-time from event sources like databases, sensors,
 mobile devices, cloud services and software applications in the form of streams of events; storing these events durably for later
@@ -62,56 +68,55 @@ destination technologies. Ensures continious flow and interpretation of data so 
 
 ## AWS MSK (Amazon Managed Streaming Kafka)
 
-    - Full documentation can be found here: # Link
+- Full documentation can be found here: # Link
 
 Fully managed service that enables you to build and run applications that use Apache Kafka to process streaming data.
 
 ## AWS MSK Connet (Amazon Managed Streaming Kafka Connect)
 
-    - A feature of MSK that makes it easy for developers to stream data to and from their Apache Kafka clusters.
-    Full documentation can be found here: # Link
+- A feature of MSK that makes it easy for developers to stream data to and from their Apache Kafka clusters. Full documentation can be found here: # Link
 
 MSK connect allows you to deploy fully managed connectors built for Kafka Connect that move data into or pull data from popular data stores like Amazon S3. Use source connectors to import data from external systems into your topics. With sink connectors, export of data can be done from your topics to external systems.
 
 ## Kafka REST Proxy
 
-    - Full documentation can be found here: Link
+- Full documentation can be found here: Link
 
 Confluent REST Proxy providing a RESTful interface to an Apache Kafka cluster.
 
 ## AWS API Gateway
 
-    - Full documentation can be found here: Link
+- Full documentation can be found here: Link
 
 A fully managed service that makes it easy for developers to create, publish, maintain, monitor and secure APIs at any scale.
 
 ## Apache Spark
 
-    - Full documentation can be found here: Link
+- Full documentation can be found here: Link
 
 Multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters.
 
 ## PySpark
 
-    - Full documentation can be found here: Link
+- Full documentation can be found here: Link
 
 Python API for Apache Spark. Enabling you to perform real-time, large-scale data processing in a distributed environment using Python.
 
 ## Databricks
 
-    - Full documention can be found here: Link
+- Full documention can be found here: Link
 
 Used the platform to perform Spark Processing of batch and streaming data. Unified, open analytics platform for building, deploying, sharing, and maintaining grade data and AI solutions at scale. Databricks Lakehouse integrates with cloud storage.
 
 ## Managed Workflows for Apache Airflows (MWAA)
 
-    - Full documentatoin can be found here: Link
+- Full documentatoin can be found here: Link
 
 With MWAA, you can use Apache Airflow and Python to create workflows without having to manage the underlying infastructure for scalability, availability and security. Enables users to use Python to build scheduling workflows for batch-orientated processes. Orchestates batch processing on the Databricks platform.
 
 ## AWS Kinesis
 
-    - Full documentation can be found here: Link
+- Full documentation can be found here: Link
 
 An managed service for processing and analysing streaming data. I've used Kinesis Data Streams to collect and store data temporarily before using Spark on Databricks to read and process the stream.
 
@@ -131,7 +136,7 @@ Image of new repo
 
 ### Step 1
 
-- Downloading the Pinterest Infrastructure
+- Downloading the Pinterest Infrastructure:
 
   - To emulate a similar data that Pinterest's engineers are likely to work with, the project contains a script, `user_posting_emulation.py` that when run from the terminal, it resembles the stream of random data points received by the Pinterest API when POST requests are made by users uploading data to Pinterest.
 
@@ -145,17 +150,17 @@ Image of new repo
 
 - Examples of data generated:
 
-  - pinterest_data:
+- pinterest_data:
 
-`{'index': 2863, 'unique_id': '9bf39437-42a6-4f02-99a0-9a0383d8cd70', 'title': '25 Super Fun Summer Crafts for Kids - Of Life and Lisa', 'description': 'Keep the kids busy this summer with these easy diy crafts and projects. Creative and…', 'poster_name': 'Of Life & Lisa | Lifestyle Blog', 'follower_count': '124k', 'tag_list': 'Summer Crafts For Kids,Fun Crafts For Kids,Summer Kids,Toddler Crafts,Crafts To Do,Diy For Kids,Summer Snow,Diys For Summer,Craft Ideas For Girls', 'is_image_or_video': 'image', 'image_src': 'https://i.pinimg.com/originals/b3/bc/e2/b3bce2964e8c8975387b39660eed5f16.jpg', 'downloaded': 1, 'save_location': 'Local save in /data/diy-and-crafts', 'category': 'diy-and-crafts'}`
+    `{'index': 2863, 'unique_id': '9bf39437-42a6-4f02-99a0-9a0383d8cd70', 'title': '25 Super Fun Summer Crafts for Kids - Of Life and Lisa', 'description': 'Keep the kids busy this summer with these easy diy crafts and projects. Creative and…', 'poster_name': 'Of Life & Lisa | Lifestyle Blog', 'follower_count': '124k', 'tag_list': 'Summer Crafts For Kids,Fun Crafts For Kids,Summer Kids,Toddler Crafts,Crafts To Do,Diy For Kids,Summer Snow,Diys For Summer,Craft Ideas For Girls', 'is_image_or_video': 'image', 'image_src': 'https://i.pinimg.com/originals/b3/bc/e2/b3bce2964e8c8975387b39660eed5f16.jpg', 'downloaded': 1, 'save_location': 'Local save in /data/diy-and-crafts', 'category': 'diy-and-crafts'}`
 
-    - geolocation_data:
+- geolocation_data:
 
-`{'ind': 2863, 'timestamp': datetime.datetime(2020, 4, 27, 13, 34, 16), 'latitude': -5.34445, 'longitude': -177.924, 'country': 'Armenia'}`
+    `{'ind': 2863, 'timestamp': datetime.datetime(2020, 4, 27, 13, 34, 16), 'latitude': -5.34445, 'longitude': -177.924, 'country': 'Armenia'}`
 
-    - user_data:
+- user_data:
 
-`{'ind': 2863, 'first_name': 'Dylan', 'last_name': 'Holmes', 'age': 32, 'date_joined': datetime.datetime(2016, 10, 23, 14, 6, 51)}`
+    `{'ind': 2863, 'first_name': 'Dylan', 'last_name': 'Holmes', 'age': 32, 'date_joined': datetime.datetime(2016, 10, 23, 14, 6, 51)}`
 
 ### Step 2
 
