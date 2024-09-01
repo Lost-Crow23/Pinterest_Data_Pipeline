@@ -582,6 +582,23 @@ Then a clean DataFrame can be written inside the Delta Tables
 
 ## File Structure
 
+    ```
+    .
+    ├── 124eb5889d67-key-pair.pem
+    ├── 124eb5889d67_dag.py
+    ├── Datacleaning with Spark.ipynb
+    ├── Kinesis Streams.ipynb
+    ├── LICENSE
+    ├── Mount_to_s3.ipynb
+    ├── README.md
+    ├── __pycache__
+    │   └── user_posting_emulation.cpython-311.pyc
+    ├── db_creds.yaml
+    ├── user_posting_emulation.py
+    └── user_posting_simulation_streaming.py
+    
+    ```
+
 ## Licence Information
 
 MIT License
