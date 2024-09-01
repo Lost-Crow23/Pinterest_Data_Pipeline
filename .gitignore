@@ -168,4 +168,3 @@ db_creds.yaml
 # Ignore all pem files
 *.pem
 # ignore all jupyter notebook files
-*.ipynb
